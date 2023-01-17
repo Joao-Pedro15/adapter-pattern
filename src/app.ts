@@ -9,6 +9,9 @@ app.get('/', (req: Request, res: Response) => {
   return res.send("hello world")
 })
 
-const PORT = 5000 || process.env.PORT
+const PORT = 5000
 
-app.listen(PORT, `SERVER RUNNING ON PORT ${PORT}`)
+app.listen(PORT, () => {
+  console.log(`SERVER RUNNING ON PORT ${PORT}`);
+  
+})
