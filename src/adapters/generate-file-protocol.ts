@@ -1,3 +1,7 @@
 export interface GenerateFileProtocol {
-  generate(headers: string[], data: {}[]): any
+  generate: GenerateFileFn
+}
+
+export interface GenerateFileFn {
+  (headers: string[], data: {}[]): any
 }
