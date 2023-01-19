@@ -3,5 +3,5 @@ export interface GenerateFileProtocol {
 }
 
 export interface GenerateFileFn {
-  (headers: string[], data: {}[]): any
+  (headers: string[] | {}[], data: {}[]): Promise<any>
 }
