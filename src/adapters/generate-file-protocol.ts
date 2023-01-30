@@ -1,3 +1,6 @@
+import { GenerateCsvAdapter } from './generateFile/generate-csv-adapter'
+import { GenerateExcelAdapter } from './generateFile/generate-excel-adapter'
+
 export interface GenerateFileProtocol {
   generate: GenerateFileFn
 }
